@@ -1,18 +1,18 @@
 import { Btn } from "@/components";
 const Home = () => {
   return (
-    <div className="flex justify-center mt-[60px]">
+    <div className="flex justify-center mt-15">
       <div
         className="w-[377px] h-[290px] py-6 px-4 bg-white 
-      shadow-[0_0_12px_0_rgba(0,0,0,0.16)] rounded-[6px]"
+      shadow-[0_0_12px_0_rgba(0,0,0,0.16)] rounded-1.5"
       >
         <div className="w-[345px] h-[187px] mb-10 text-center">
-          <h2 className="w-full text-xl leading-[28px] font-semibold mb-5">
+          <h2 className="w-full text-xl leading-7 font-semibold mb-5">
             To-Do list
           </h2>
-          <div className="flex gap-[6px]">
+          <div className="flex gap-1.5">
             <input
-              className="w-[280px] h-[40px] rounded-[6px] border-[1px] 
+              className="w-[280px] h-[40px] rounded-1.5 border-[1px] 
             border-zinc-200 mb-5"
             ></input>
             <Btn
@@ -24,7 +24,7 @@ const Home = () => {
               name="Add"
             ></Btn>
           </div>
-          <div className="flex gap-[6px] mb-8">
+          <div className="flex gap-1.5 mb-8">
             <Btn
               py="8.5px"
               px="12px"
@@ -51,7 +51,7 @@ const Home = () => {
             ></Btn>
           </div>
           <p
-            className="w-full h-[17px] text-[14px] 
+            className="w-full h-[17px] text-sm 
           leading-[17px] text-gray-500"
           >
             No tasks yet. Add one above!
