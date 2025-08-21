@@ -2,22 +2,17 @@ import { Btn } from "@/components";
 const Home = () => {
   return (
     <div className="flex justify-center mt-[60px]">
-      <div
-        className="w-[377px] h-[290px] py-6 px-4 bg-white 
-      shadow-[0_0_12px_0_rgba(0,0,0,0.16)] rounded-[6px]"
-      >
+      <div className="w-[377px] h-[290px] py-6 px-4 bg-white shadow-[0_0_12px_0_rgba(0,0,0,0.16)] rounded-[6px]">
         <div className="w-[345px] h-[187px] mb-10 text-center">
           <h2 className="w-full text-xl leading-7 font-semibold mb-5">
             To-Do list
           </h2>
-
           <div className="flex gap-1.5 mb-5">
-            <input
-              className="w-[280px] h-[40px] rounded-[6px] border-[1px] 
-            border-zinc-200"
-            ></input>
+            <input className="w-[280px] h-[40px] rounded-[6px] border-[1px] border-zinc-200"></input>
             {/* const data = {paddingy paddingx fontSize lineHeight fontColor bg name} */}
             <Btn
+              py="11.5px"
+              px="16px"
               paddingy="11.5px"
               paddingx="16px"
               fontSize="14px"
@@ -29,8 +24,8 @@ const Home = () => {
           </div>
           <div className="flex gap-1.5 mb-8">
             <Btn
-              py="8.5px"
-              px="12px"
+              paddingy="8.5px"
+              paddingx="12px"
               fontSize="12px"
               lineHeight="15px"
               fontColor="rgba(249,249,249,1)"
@@ -38,8 +33,8 @@ const Home = () => {
               name="All"
             ></Btn>
             <Btn
-              py="8.5px"
-              px="12px"
+              paddingy="8.5px"
+              paddingx="12px"
               fontSize="12px"
               lineHeight="15px"
               fontColor="rgba(54,54,54,1)"
@@ -47,8 +42,8 @@ const Home = () => {
               name="Active"
             ></Btn>
             <Btn
-              py="8.5px"
-              px="12px"
+              paddingy="8.5px"
+              paddingx="12px"
               fontSize="12px"
               lineHeight="15px"
               fontColor="rgba(54,54,54,1)"
@@ -56,10 +51,7 @@ const Home = () => {
               name="Completed"
             ></Btn>
           </div>
-          <p
-            className="w-full h-[17px] text-sm 
-          leading-[17px] text-gray-500"
-          >
+          <p className="w-full h-[17px] text-sm leading-[17px] text-gray-500">
             No tasks yet. Add one above!
           </p>
         </div>
