@@ -1,9 +1,14 @@
 import { Btn, Task } from "@/components";
 const Home = () => {
+  const task = {
+    taskName: "ger teverleh",
+    isCompleted: true,
+    // isChecked: true,
+  };
   return (
     <div className="flex justify-center mt-[60px]">
-      <div className="w-[377px] h-[290px] py-6 px-4 bg-white shadow-[0_0_12px_0_rgba(0,0,0,0.16)] rounded-[6px]">
-        <div className="w-[345px] h-[187px] mb-10 text-center">
+      <div className="w-[377px]  py-6 px-4 bg-white shadow-[0_0_12px_0_rgba(0,0,0,0.16)] rounded-[6px]">
+        <div className="w-[345px]  mb-10 text-center">
           <h2 className="w-full text-xl leading-7 font-semibold mb-5">
             To-Do list
           </h2>
@@ -29,20 +34,31 @@ const Home = () => {
             ></Btn>
           </div>
 
-          <p className="w-full h-[17px] text-sm leading-[17px] text-gray-500">
-            No tasks yet. Add one above!
-          </p>
+          <div className="w-full bg-white flex flex-col items-center gap-[19px] py-5">
+            <Task
+              taskName={task.taskName}
+              isCompleted={task.isCompleted}
+            ></Task>
+            <Task
+              taskName={task.taskName}
+              isCompleted={task.isCompleted}
+            ></Task>
+            <Task></Task>
+            <Task></Task>
+          </div>
+
+          <div className="w-full h-[17px] text-sm leading-[17px] text-gray-500 mt-5">
+            <p>No tasks yet. Add one above!</p>
+          </div>
+          <div className="w-full h-[17px] text-sm leading-[17px] mt-5">
+            <p className=" text-gray-500">1 of 2 tasks completed</p>
+            <p className="text-red-500">Clear completed</p>
+          </div>
         </div>
         <div className="w-full h-[15px] flex justify-center gap-1 text-xs">
           <span className="text-gray-500">Powered by</span>
           <span className="text-[rgba(59,115,237,1)]">Pinecone academy</span>
         </div>
-      </div>
-      <div className="w-[385px] h-[345px] bg-white flex flex-col items-center gap-[19px] p-5">
-        <Task taskName="ger teverleh"></Task>
-        <Task taskName="hool hiih"></Task>
-        <Task></Task>
-        <Task></Task>
       </div>
     </div>
   );
