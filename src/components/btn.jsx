@@ -8,10 +8,10 @@ export const Btn = (props) => {
           backgroundColor: props.bg,
           color: props.fontColor,
           fontSize: props.fontSize,
-          paddingTop: props.py,
-          paddingBottom: props.py,
-          paddingLeft: props.px,
-          paddingRight: props.px,
+          paddingTop: props.paddingy,
+          paddingBottom: props.paddingy,
+          paddingLeft: props.paddingx,
+          paddingRight: props.paddingx,
           lineHeight: props.lineHeight,
         }}
       >
