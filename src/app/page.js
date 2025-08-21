@@ -10,14 +10,16 @@ const Home = () => {
           <h2 className="w-full text-xl leading-7 font-semibold mb-5">
             To-Do list
           </h2>
+
           <div className="flex gap-1.5 mb-5">
             <input
               className="w-[280px] h-[40px] rounded-[6px] border-[1px] 
             border-zinc-200"
             ></input>
+            {/* const data = {paddingy paddingx fontSize lineHeight fontColor bg name} */}
             <Btn
-              py="11.5px"
-              px="16px"
+              paddingy="11.5px"
+              paddingx="16px"
               fontSize="14px"
               lineHeight="17px"
               fontColor="rgba(249,249,249,1)"
